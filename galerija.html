@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="bs">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>Galerija | Hotel Argument</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet"/>
+  <style>
+    body { background-color: #F9F9F7; color: #1a1c1b; font-family: 'Inter', sans-serif; }
+    .filter-btn { transition: all 0.2s; cursor: pointer; }
+    .filter-btn.active { background: #1A1A1A; color: white; border-color: #1A1A1A; }
+  </style>
+</head>
+<body class="antialiased">
+
+<nav class="bg-[#F9F9F7] top-0 sticky shadow-sm z-50">
+  <div class="flex justify-between items-center w-full px-16 max-w-[1280px] mx-auto h-20">
+    <a class="hover:opacity-80 transition-opacity" href="index.html">
+      <img src="img/Hotel Banja Luka Argument LOGO.jpeg" alt="Hotel Argument" class="h-12 w-auto object-contain"/>
+    </a>
+    <ul class="hidden md:flex items-center gap-8">
+      <li><a class="text-[#444748] hover:text-black text-xs font-semibold uppercase tracking-widest" href="index.html">Početna</a></li>
+      <li><a class="text-[#444748] hover:text-black text-xs font-semibold uppercase tracking-widest" href="smjestaj.html">Smještaj</a></li>
+      <li><a class="text-[#444748] hover:text-black text-xs font-semibold uppercase tracking-widest" href="restoran.html">Restoran</a></li>
+      <li><a class="text-[#444748] hover:text-black text-xs font-semibold uppercase tracking-widest" href="konferencije.html">Konferencije</a></li>
+      <li><a class="text-black border-b-2 border-black pb-1 text-xs font-semibold uppercase tracking-widest" href="galerija.html">Galerija</a></li>
+      <li><a class="text-[#444748] hover:text-black text-xs font-semibold uppercase tracking-widest" href="kontakt.html">Kontakt</a></li>
+    </ul>
+    <a class="hidden md:inline-flex border border-black text-black text-xs font-semibold px-6 py-3 uppercase tracking-widest hover:bg-black hover:text-white transition-all" href="kontakt.html">Rezervišite</a>
+  </div>
+</nav>
+
+<section class="px-16 py-16 max-w-[1280px] mx-auto border-b border-gray-200">
+  <p class="text-xs font-semibold uppercase tracking-widest text-[#D4AF37] mb-4">Vizualni prikaz</p>
+  <h1 class="text-5xl font-bold" style="font-family:'Playfair Display',serif;">Galerija</h1>
+</section>
+
+<section class="px-16 py-12 max-w-[1280px] mx-auto">
+  <div class="flex flex-wrap gap-3 mb-12">
+    <button class="filter-btn active text-xs font-semibold uppercase tracking-widest border border-gray-300 px-5 py-2" onclick="filterGallery('sve', this)">Sve</button>
+    <button class="filter-btn text-xs font-semibold uppercase tracking-widest border border-gray-300 px-5 py-2 text-[#444748]" onclick="filterGallery('sobe', this)">Sobe</button>
+    <button class="filter-btn text-xs font-semibold uppercase tracking-widest border border-gray-300 px-5 py-2 text-[#444748]" onclick="filterGallery('restoran', this)">Restoran</button>
+    <button class="filter-btn text-xs font-semibold uppercase tracking-widest border border-gray-300 px-5 py-2 text-[#444748]" onclick="filterGallery('konferencije', this)">Konferencije</button>
+    <button class="filter-btn text-xs font-semibold uppercase tracking-widest border border-gray-300 px-5 py-2 text-[#444748]" onclick="filterGallery('eksterijer', this)">Eksterijer</button>
+  </div>
+
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-6" id="gallery-grid">
+    <div class="gallery-item" data-cat="sobe"><div class="aspect-[4/3] overflow-hidden bg-gray-100"><img src="https://picsum.photos/seed/g-room1/800/600" class="w-full h-full object-cover hover:scale-105 transition-transform duration-700" alt="Soba"/></div></div>
+    <div class="gallery-item" data-cat="eksterijer"><div class="aspect-[4/3] overflow-hidden bg-gray-100"><img src="https://picsum.photos/seed/g-ext1/800/600" class="w-full h-full object-cover hover:scale-105 transition-transform duration-700" alt="Eksterijer"/></div></div>
+    <div class="gallery-item" data-cat="restoran"><div class="aspect-[4/3] overflow-hidden bg-gray-100"><img src="https://picsum.photos/seed/g-rest1/800/600" class="w-full h-full object-cover hover:scale-105 transition-transform duration-700" alt="Restoran"/></div></div>
+    <div class="gallery-item" data-cat="sobe"><div class="aspect-[4/3] overflow-hidden bg-gray-100"><img src="https://picsum.photos/seed/g-room2/800/600" class="w-full h-full object-cover hover:scale-105 transition-transform duration-700" alt="Soba"/></div></div>
+    <div class="gallery-item" data-cat="konferencije"><div class="aspect-[4/3] overflow-hidden bg-gray-100"><img src="https://picsum.photos/seed/g-conf1/800/600" class="w-full h-full object-cover hover:scale-105 transition-transform duration-700" alt="Konferencijska sala"/></div></div>
+    <div class="gallery-item" data-cat="restoran"><div class="aspect-[4/3] overflow-hidden bg-gray-100"><img src="https://picsum.photos/seed/g-rest2/800/600" class="w-full h-full object-cover hover:scale-105 transition-transform duration-700" alt="Restoran"/></div></div>
+    <div class="gallery-item" data-cat="sobe"><div class="aspect-[4/3] overflow-hidden bg-gray-100"><img src="https://picsum.photos/seed/g-room3/800/600" class="w-full h-full object-cover hover:scale-105 transition-transform duration-700" alt="Soba"/></div></div>
+    <div class="gallery-item" data-cat="eksterijer"><div class="aspect-[4/3] overflow-hidden bg-gray-100"><img src="https://picsum.photos/seed/g-ext2/800/600" class="w-full h-full object-cover hover:scale-105 transition-transform duration-700" alt="Eksterijer"/></div></div>
+  </div>
+</section>
+
+<script>
+  function filterGallery(cat, btn) {
+    document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    document.querySelectorAll('.gallery-item').forEach(item => {
+      item.style.display = (cat === 'sve' || item.dataset.cat === cat) ? 'block' : 'none';
+    });
+  }
+</script>
+
+<footer class="bg-[#1A1A1A] text-white py-16 mt-8">
+  <div class="max-w-[1280px] mx-auto px-16">
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
+      <div><span class="text-xl font-bold block mb-4" style="font-family:'Playfair Display',serif;">Hotel Argument</span><p class="text-sm text-gray-400 leading-relaxed">V kozarske brigade 25<br/>Banja Luka 78000<br/>Bosna i Hercegovina</p></div>
+      <div><h4 class="text-[#D4AF37] font-semibold mb-6">Adresa</h4><p class="text-sm text-gray-400 leading-relaxed">V kozarske brigade 25<br/>Banja Luka 78000<br/>Bosna i Hercegovina</p></div>
+      <div><h4 class="text-[#D4AF37] font-semibold mb-6">Kontakt</h4><p class="text-sm text-gray-400 mb-2">+38765 441-034</p><a class="text-sm text-gray-400 hover:text-[#D4AF37]" href="mailto:info@hotelargument.com">info@hotelargument.com</a></div>
+      <div><h4 class="text-[#D4AF37] font-semibold mb-6">Navigacija</h4><ul class="flex flex-col gap-3 text-sm text-gray-400"><li><a class="hover:text-[#D4AF37]" href="smjestaj.html">Smještaj</a></li><li><a class="hover:text-[#D4AF37]" href="restoran.html">Restoran</a></li><li><a class="hover:text-[#D4AF37]" href="konferencije.html">Konferencije</a></li><li><a class="hover:text-[#D4AF37]" href="galerija.html">Galerija</a></li><li><a class="hover:text-[#D4AF37]" href="kontakt.html">Kontakt</a></li></ul></div>
+    </div>
+    <div class="border-t border-gray-800 pt-8 flex justify-between items-center text-xs text-gray-500">
+      <div class="flex gap-4"><a class="hover:text-white" href="#">Politika privatnosti</a><span>|</span><a class="hover:text-white" href="#">Uslovi korištenja</a></div>
+      <p>© 2026 Hotel Argument. Sva prava zadržana.</p>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

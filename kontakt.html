@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="bs">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>Kontakt | Hotel Argument</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet"/>
+  <style>
+    body { background-color: #F9F9F7; color: #1a1c1b; font-family: 'Inter', sans-serif; }
+    input:focus, select:focus, textarea:focus { outline: none; border-color: #1a1c1b; }
+  </style>
+</head>
+<body class="antialiased">
+
+<nav class="bg-[#F9F9F7] top-0 sticky shadow-sm z-50">
+  <div class="flex justify-between items-center w-full px-16 max-w-[1280px] mx-auto h-20">
+    <a class="hover:opacity-80 transition-opacity" href="index.html">
+      <img src="img/Hotel Banja Luka Argument LOGO.jpeg" alt="Hotel Argument" class="h-12 w-auto object-contain"/>
+    </a>
+    <ul class="hidden md:flex items-center gap-8">
+      <li><a class="text-[#444748] hover:text-black text-xs font-semibold uppercase tracking-widest" href="index.html">Početna</a></li>
+      <li><a class="text-[#444748] hover:text-black text-xs font-semibold uppercase tracking-widest" href="smjestaj.html">Smještaj</a></li>
+      <li><a class="text-[#444748] hover:text-black text-xs font-semibold uppercase tracking-widest" href="restoran.html">Restoran</a></li>
+      <li><a class="text-[#444748] hover:text-black text-xs font-semibold uppercase tracking-widest" href="konferencije.html">Konferencije</a></li>
+      <li><a class="text-[#444748] hover:text-black text-xs font-semibold uppercase tracking-widest" href="galerija.html">Galerija</a></li>
+      <li><a class="text-black border-b-2 border-black pb-1 text-xs font-semibold uppercase tracking-widest" href="kontakt.html">Kontakt</a></li>
+    </ul>
+    <a class="hidden md:inline-flex border border-black text-black text-xs font-semibold px-6 py-3 uppercase tracking-widest hover:bg-black hover:text-white transition-all" href="kontakt.html">Rezervišite</a>
+  </div>
+</nav>
+
+<section class="px-16 py-20 max-w-[1280px] mx-auto border-b border-gray-200">
+  <p class="text-xs font-semibold uppercase tracking-widest text-[#D4AF37] mb-4">Javite nam se</p>
+  <h1 class="text-5xl font-bold" style="font-family:'Playfair Display',serif;">Kontakt i rezervacije</h1>
+</section>
+
+<section class="px-16 py-20 max-w-[1280px] mx-auto">
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-20">
+
+    <div>
+      <h2 class="text-2xl font-semibold mb-10" style="font-family:'Playfair Display',serif;">Informacije</h2>
+      <div class="flex flex-col gap-8 mb-12">
+        <div class="flex items-start gap-4">
+          <span class="material-symbols-outlined text-[#D4AF37] mt-1">location_on</span>
+          <div>
+            <strong class="block text-xs uppercase tracking-wider mb-2 text-[#444748]">Adresa</strong>
+            <p class="text-sm leading-relaxed">V kozarske brigade 25<br/>Banja Luka 78000<br/>Bosna i Hercegovina</p>
+          </div>
+        </div>
+        <div class="flex items-start gap-4">
+          <span class="material-symbols-outlined text-[#D4AF37] mt-1">phone</span>
+          <div>
+            <strong class="block text-xs uppercase tracking-wider mb-2 text-[#444748]">Telefon</strong>
+            <a href="tel:+38765441034" class="text-sm hover:text-[#D4AF37] transition-colors">+38765 441-034</a>
+          </div>
+        </div>
+        <div class="flex items-start gap-4">
+          <span class="material-symbols-outlined text-[#D4AF37] mt-1">mail</span>
+          <div>
+            <strong class="block text-xs uppercase tracking-wider mb-2 text-[#444748]">Email</strong>
+            <a href="mailto:info@hotelargument.com" class="text-sm hover:text-[#D4AF37] transition-colors">info@hotelargument.com</a>
+          </div>
+        </div>
+        <div class="flex items-start gap-4">
+          <span class="material-symbols-outlined text-[#D4AF37] mt-1">schedule</span>
+          <div>
+            <strong class="block text-xs uppercase tracking-wider mb-2 text-[#444748]">Recepcija</strong>
+            <p class="text-sm">24 sata / 7 dana u sedmici</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="aspect-[4/3] overflow-hidden border border-gray-200">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d537.1669824000662!2d17.202638236295588!3d44.785349779595975!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475e03a87a8d552b%3A0x8047a9c3d12feb9f!2sV%20kozarske%20brigade%2025%2C%20Banja%20Luka%2078000!5e1!3m2!1sen!2sba!4v1782202902482!5m2!1sen!2sba"
+          width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </div>
+
+    <div>
+      <h2 class="text-2xl font-semibold mb-10" style="font-family:'Playfair Display',serif;">Pošaljite upit</h2>
+      <div id="kontakt-success" class="hidden bg-green-50 border border-green-200 text-green-800 text-sm px-4 py-3 mb-4">
+        ✓ Vaš upit je primljen! Kontaktiraćemo vas u najkraćem mogućem roku.
+      </div>
+      <form id="kontakt-form" class="flex flex-col gap-7">
+        <input type="hidden" name="access_key" value="52fc7a6e-c7b5-4045-838e-2235ad578b80"/>
+        <input type="hidden" name="subject" value="Novi upit — Hotel Argument"/>
+        <input type="hidden" name="from_name" value="Hotel Argument Web"/>
+        <div>
+          <label class="block text-xs font-semibold uppercase tracking-widest mb-3 text-[#444748]">Ime i prezime *</label>
+          <input type="text" name="ime_prezime" required placeholder="Vaše ime i prezime" class="w-full border-b border-gray-300 bg-transparent pb-3 text-sm transition-colors"/>
+        </div>
+        <div>
+          <label class="block text-xs font-semibold uppercase tracking-widest mb-3 text-[#444748]">Email adresa *</label>
+          <input type="email" name="email" required placeholder="vasa@email.com" class="w-full border-b border-gray-300 bg-transparent pb-3 text-sm transition-colors"/>
+        </div>
+        <div>
+          <label class="block text-xs font-semibold uppercase tracking-widest mb-3 text-[#444748]">Telefon</label>
+          <input type="tel" name="telefon" placeholder="+387 ..." class="w-full border-b border-gray-300 bg-transparent pb-3 text-sm transition-colors"/>
+        </div>
+        <div>
+          <label class="block text-xs font-semibold uppercase tracking-widest mb-3 text-[#444748]">Vrsta upita</label>
+          <select name="vrsta_upita" class="w-full border-b border-gray-300 bg-transparent pb-3 text-sm transition-colors appearance-none text-[#444748]">
+            <option>Rezervacija smještaja</option>
+            <option>Rezervacija restorana</option>
+            <option>Konferencijske sale</option>
+            <option>Grupni dolazak</option>
+            <option>Ostalo</option>
+          </select>
+        </div>
+        <div>
+          <label class="block text-xs font-semibold uppercase tracking-widest mb-3 text-[#444748]">Poruka *</label>
+          <textarea name="poruka" rows="4" required placeholder="Unesite vašu poruku, datume dolaska/odlaska, broj osoba..." class="w-full border-b border-gray-300 bg-transparent pb-3 text-sm transition-colors resize-none"></textarea>
+        </div>
+        <button type="submit" class="bg-black text-white text-xs font-semibold uppercase tracking-widest px-10 py-4 hover:bg-[#D4AF37] transition-colors duration-300 w-full mt-2">
+          Pošaljite upit
+        </button>
+      </form>
+    </div>
+
+  </div>
+</section>
+
+<script>
+  document.getElementById('kontakt-form').addEventListener('submit', async function(e) {
+    e.preventDefault();
+    const form = e.target;
+    const btn = form.querySelector('button[type=submit]');
+    btn.disabled = true;
+    btn.textContent = 'Slanje...';
+    const data = new FormData(form);
+    const res = await fetch('https://api.web3forms.com/submit', { method: 'POST', body: data, headers: { Accept: 'application/json' } });
+    const json = await res.json();
+    if (json.success) {
+      form.style.display = 'none';
+      document.getElementById('kontakt-success').classList.remove('hidden');
+    } else {
+      btn.disabled = false;
+      btn.textContent = 'Pošaljite upit';
+      alert('Greška pri slanju. Pokušajte ponovo ili nas pozovite.');
+    }
+  });
+</script>
+
+<footer class="bg-[#1A1A1A] text-white py-16">
+  <div class="max-w-[1280px] mx-auto px-16">
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
+      <div><span class="text-xl font-bold block mb-4" style="font-family:'Playfair Display',serif;">Hotel Argument</span><p class="text-sm text-gray-400 leading-relaxed">V kozarske brigade 25<br/>Banja Luka 78000<br/>Bosna i Hercegovina</p></div>
+      <div><h4 class="text-[#D4AF37] font-semibold mb-6">Adresa</h4><p class="text-sm text-gray-400 leading-relaxed">V kozarske brigade 25<br/>Banja Luka 78000<br/>Bosna i Hercegovina</p></div>
+      <div><h4 class="text-[#D4AF37] font-semibold mb-6">Kontakt</h4><p class="text-sm text-gray-400 mb-2">+38765 441-034</p><a class="text-sm text-gray-400 hover:text-[#D4AF37]" href="mailto:info@hotelargument.com">info@hotelargument.com</a></div>
+      <div><h4 class="text-[#D4AF37] font-semibold mb-6">Navigacija</h4><ul class="flex flex-col gap-3 text-sm text-gray-400"><li><a class="hover:text-[#D4AF37]" href="smjestaj.html">Smještaj</a></li><li><a class="hover:text-[#D4AF37]" href="restoran.html">Restoran</a></li><li><a class="hover:text-[#D4AF37]" href="konferencije.html">Konferencije</a></li><li><a class="hover:text-[#D4AF37]" href="galerija.html">Galerija</a></li><li><a class="hover:text-[#D4AF37]" href="kontakt.html">Kontakt</a></li></ul></div>
+    </div>
+    <div class="border-t border-gray-800 pt-8 flex justify-between items-center text-xs text-gray-500">
+      <div class="flex gap-4"><a class="hover:text-white" href="#">Politika privatnosti</a><span>|</span><a class="hover:text-white" href="#">Uslovi korištenja</a></div>
+      <p>© 2026 Hotel Argument. Sva prava zadržana.</p>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

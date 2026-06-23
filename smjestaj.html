@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="bs">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>Smještaj | Hotel Argument</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet"/>
+  <style>body { background-color: #F9F9F7; color: #1a1c1b; font-family: 'Inter', sans-serif; }</style>
+</head>
+<body class="antialiased">
+
+<nav class="bg-[#F9F9F7] top-0 sticky shadow-sm z-50">
+  <div class="flex justify-between items-center w-full px-16 max-w-[1280px] mx-auto h-20">
+    <a class="hover:opacity-80 transition-opacity" href="index.html">
+      <img src="img/Hotel Banja Luka Argument LOGO.jpeg" alt="Hotel Argument" class="h-12 w-auto object-contain"/>
+    </a>
+    <ul class="hidden md:flex items-center gap-8">
+      <li><a class="text-[#444748] hover:text-black text-xs font-semibold uppercase tracking-widest" href="index.html">Početna</a></li>
+      <li><a class="text-black border-b-2 border-black pb-1 text-xs font-semibold uppercase tracking-widest" href="smjestaj.html">Smještaj</a></li>
+      <li><a class="text-[#444748] hover:text-black text-xs font-semibold uppercase tracking-widest" href="restoran.html">Restoran</a></li>
+      <li><a class="text-[#444748] hover:text-black text-xs font-semibold uppercase tracking-widest" href="konferencije.html">Konferencije</a></li>
+      <li><a class="text-[#444748] hover:text-black text-xs font-semibold uppercase tracking-widest" href="galerija.html">Galerija</a></li>
+      <li><a class="text-[#444748] hover:text-black text-xs font-semibold uppercase tracking-widest" href="kontakt.html">Kontakt</a></li>
+    </ul>
+    <a class="hidden md:inline-flex border border-black text-black text-xs font-semibold px-6 py-3 uppercase tracking-widest hover:bg-black hover:text-white transition-all" href="kontakt.html">Rezervišite</a>
+  </div>
+</nav>
+
+<section class="px-16 py-20 max-w-[1280px] mx-auto border-b border-gray-200">
+  <p class="text-xs font-semibold uppercase tracking-widest text-[#D4AF37] mb-4">Smještaj</p>
+  <h1 class="text-5xl font-bold mb-6" style="font-family:'Playfair Display',serif;">Vaš prostor za odmor</h1>
+  <p class="text-lg text-[#444748] max-w-2xl leading-relaxed">Svaka soba u Hotelu Argument pažljivo je uređena kako bi vam pružila maksimalan komfor. Bez obzira dolazite li poslovno ili privatno, pronađite smještaj koji odgovara vašim potrebama.</p>
+</section>
+
+<section class="px-16 py-20 max-w-[1280px] mx-auto">
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+
+    <!-- Single Room -->
+    <div class="flex flex-col">
+      <div class="relative aspect-[4/3] overflow-hidden mb-6 bg-gray-100 group" id="s-single">
+        <div class="slides-track flex h-full transition-transform duration-500" style="width:300%">
+          <img src="img/Hotel Banja Luka Argument single WebP img 1.webp" class="h-full object-cover shrink-0" style="min-width:33.333%" alt="Single Room"/>
+          <img src="img/Hotel Banja Luka Argument single WebP img 2.webp" class="h-full object-cover shrink-0" style="min-width:33.333%" alt="Single Room"/>
+          <img src="img/Hotel Banja Luka Argument single WebP img 3.webp" class="h-full object-cover shrink-0" style="min-width:33.333%" alt="Single Room"/>
+        </div>
+        <button onclick="goSlide('s-single',-1)" class="absolute left-2 top-1/2 -translate-y-1/2 bg-black/50 text-white w-9 h-9 flex items-center justify-center text-xl opacity-0 group-hover:opacity-100 transition-opacity hover:bg-[#D4AF37]">&#8249;</button>
+        <button onclick="goSlide('s-single',1)" class="absolute right-2 top-1/2 -translate-y-1/2 bg-black/50 text-white w-9 h-9 flex items-center justify-center text-xl opacity-0 group-hover:opacity-100 transition-opacity hover:bg-[#D4AF37]">&#8250;</button>
+        <div class="absolute bottom-3 left-1/2 -translate-x-1/2 flex gap-2">
+          <span class="dot w-2 h-2 rounded-full bg-white cursor-pointer" onclick="setSlide('s-single',0)"></span>
+          <span class="dot w-2 h-2 rounded-full bg-white/40 cursor-pointer" onclick="setSlide('s-single',1)"></span>
+          <span class="dot w-2 h-2 rounded-full bg-white/40 cursor-pointer" onclick="setSlide('s-single',2)"></span>
+        </div>
+      </div>
+      <div class="flex items-center gap-4 mb-3 text-[#444748]">
+        <span class="material-symbols-outlined text-lg">wifi</span>
+        <span class="material-symbols-outlined text-lg">ac_unit</span>
+        <span class="material-symbols-outlined text-lg">tv</span>
+        <span class="material-symbols-outlined text-lg">shower</span>
+      </div>
+      <div class="flex justify-between items-start mb-3">
+        <h2 class="text-2xl font-semibold" style="font-family:'Playfair Display',serif;">Single Room</h2>
+        <span class="text-xs font-semibold uppercase tracking-widest border border-gray-300 px-3 py-1 text-[#444748]">1 osoba</span>
+      </div>
+      <p class="text-[#444748] text-base leading-relaxed mb-6">Udobna jednokrevetna soba idealna za poslovne putnike. Opremljena svim potrebnim sadržajima za ugodan boravak.</p>
+      <div class="flex items-center justify-between mt-auto pt-6 border-t border-gray-200">
+        <span class="text-sm text-[#444748]">Od <strong class="text-black text-base">80 KM</strong> / noć</span>
+        <a href="kontakt.html" class="bg-black text-white text-xs font-semibold uppercase tracking-widest px-6 py-3 hover:bg-[#D4AF37] transition-colors duration-300">Rezervišite</a>
+      </div>
+    </div>
+
+    <!-- Double or Twin Room -->
+    <div class="flex flex-col">
+      <div class="relative aspect-[4/3] overflow-hidden mb-6 bg-gray-100 group" id="s-double">
+        <div class="slides-track flex h-full transition-transform duration-500" style="width:300%">
+          <img src="img/Hotel Banja Luka Argument Dvokreventa WebP img 1.webp" class="h-full object-cover shrink-0" style="min-width:33.333%" alt="Double Room"/>
+          <img src="img/Hotel Banja Luka Argument Dvokreventa WebP img 2.webp" class="h-full object-cover shrink-0" style="min-width:33.333%" alt="Double Room"/>
+          <img src="img/Hotel Banja Luka Argument Dvokreventa WebP img 3.webp" class="h-full object-cover shrink-0" style="min-width:33.333%" alt="Double Room"/>
+        </div>
+        <button onclick="goSlide('s-double',-1)" class="absolute left-2 top-1/2 -translate-y-1/2 bg-black/50 text-white w-9 h-9 flex items-center justify-center text-xl opacity-0 group-hover:opacity-100 transition-opacity hover:bg-[#D4AF37]">&#8249;</button>
+        <button onclick="goSlide('s-double',1)" class="absolute right-2 top-1/2 -translate-y-1/2 bg-black/50 text-white w-9 h-9 flex items-center justify-center text-xl opacity-0 group-hover:opacity-100 transition-opacity hover:bg-[#D4AF37]">&#8250;</button>
+        <div class="absolute bottom-3 left-1/2 -translate-x-1/2 flex gap-2">
+          <span class="dot w-2 h-2 rounded-full bg-white cursor-pointer" onclick="setSlide('s-double',0)"></span>
+          <span class="dot w-2 h-2 rounded-full bg-white/40 cursor-pointer" onclick="setSlide('s-double',1)"></span>
+          <span class="dot w-2 h-2 rounded-full bg-white/40 cursor-pointer" onclick="setSlide('s-double',2)"></span>
+        </div>
+      </div>
+      <div class="flex items-center gap-4 mb-3 text-[#444748]">
+        <span class="material-symbols-outlined text-lg">wifi</span>
+        <span class="material-symbols-outlined text-lg">ac_unit</span>
+        <span class="material-symbols-outlined text-lg">tv</span>
+        <span class="material-symbols-outlined text-lg">shower</span>
+        <span class="material-symbols-outlined text-lg">bed</span>
+      </div>
+      <div class="flex justify-between items-start mb-3">
+        <h2 class="text-2xl font-semibold" style="font-family:'Playfair Display',serif;">Double or Twin Room</h2>
+        <span class="text-xs font-semibold uppercase tracking-widest border border-gray-300 px-3 py-1 text-[#444748]">2 osobe</span>
+      </div>
+      <p class="text-[#444748] text-base leading-relaxed mb-6">Prostrana soba s bračnim ili dva odvojena kreveta. Idealna za parove ili kolege na poslovnom putu.</p>
+      <div class="flex items-center justify-between mt-auto pt-6 border-t border-gray-200">
+        <span class="text-sm text-[#444748]">Od <strong class="text-black text-base">120 KM</strong> / noć</span>
+        <a href="kontakt.html" class="bg-black text-white text-xs font-semibold uppercase tracking-widest px-6 py-3 hover:bg-[#D4AF37] transition-colors duration-300">Rezervišite</a>
+      </div>
+    </div>
+
+    <!-- Deluxe Double Room -->
+    <div class="flex flex-col">
+      <div class="relative aspect-[4/3] overflow-hidden mb-6 bg-gray-100 group" id="s-deluxe">
+        <div class="slides-track flex h-full transition-transform duration-500" style="width:400%">
+          <img src="img/Deluxe Double Room Hotel Banja Luka Argument img 1.png" class="h-full object-cover shrink-0" style="min-width:25%" alt="Deluxe Room"/>
+          <img src="img/Deluxe Double Room Hotel Banja Luka Argument img 2.png" class="h-full object-cover shrink-0" style="min-width:25%" alt="Deluxe Room"/>
+          <img src="img/Deluxe Double Room Hotel Banja Luka Argument img 3.png" class="h-full object-cover shrink-0" style="min-width:25%" alt="Deluxe Room"/>
+          <img src="img/Deluxe Double Room Hotel Banja Luka Argument img 4.png" class="h-full object-cover shrink-0" style="min-width:25%" alt="Deluxe Room"/>
+        </div>
+        <button onclick="goSlide('s-deluxe',-1)" class="absolute left-2 top-1/2 -translate-y-1/2 bg-black/50 text-white w-9 h-9 flex items-center justify-center text-xl opacity-0 group-hover:opacity-100 transition-opacity hover:bg-[#D4AF37]">&#8249;</button>
+        <button onclick="goSlide('s-deluxe',1)" class="absolute right-2 top-1/2 -translate-y-1/2 bg-black/50 text-white w-9 h-9 flex items-center justify-center text-xl opacity-0 group-hover:opacity-100 transition-opacity hover:bg-[#D4AF37]">&#8250;</button>
+        <div class="absolute bottom-3 left-1/2 -translate-x-1/2 flex gap-2">
+          <span class="dot w-2 h-2 rounded-full bg-white cursor-pointer" onclick="setSlide('s-deluxe',0)"></span>
+          <span class="dot w-2 h-2 rounded-full bg-white/40 cursor-pointer" onclick="setSlide('s-deluxe',1)"></span>
+          <span class="dot w-2 h-2 rounded-full bg-white/40 cursor-pointer" onclick="setSlide('s-deluxe',2)"></span>
+          <span class="dot w-2 h-2 rounded-full bg-white/40 cursor-pointer" onclick="setSlide('s-deluxe',3)"></span>
+        </div>
+      </div>
+      <div class="flex items-center gap-4 mb-3 text-[#444748]">
+        <span class="material-symbols-outlined text-lg">wifi</span>
+        <span class="material-symbols-outlined text-lg">ac_unit</span>
+        <span class="material-symbols-outlined text-lg">tv</span>
+        <span class="material-symbols-outlined text-lg">shower</span>
+        <span class="material-symbols-outlined text-lg">bed</span>
+        <span class="material-symbols-outlined text-lg">local_bar</span>
+      </div>
+      <div class="flex justify-between items-start mb-3">
+        <h2 class="text-2xl font-semibold" style="font-family:'Playfair Display',serif;">Deluxe Double Room</h2>
+        <span class="text-xs font-semibold uppercase tracking-widest border border-gray-300 px-3 py-1 text-[#D4AF37]">Premium</span>
+      </div>
+      <p class="text-[#444748] text-base leading-relaxed mb-6">Naša najprostranija soba s bračnim krevetom, pogledom na grad i premium sadržajima. Savršena za posebne prilike i duže boravke.</p>
+      <div class="flex items-center justify-between mt-auto pt-6 border-t border-gray-200">
+        <span class="text-sm text-[#444748]">Od <strong class="text-black text-base">160 KM</strong> / noć</span>
+        <a href="kontakt.html" class="bg-black text-white text-xs font-semibold uppercase tracking-widest px-6 py-3 hover:bg-[#D4AF37] transition-colors duration-300">Rezervišite</a>
+      </div>
+    </div>
+
+    <!-- Triple Room -->
+    <div class="flex flex-col">
+      <div class="relative aspect-[4/3] overflow-hidden mb-6 bg-gray-100 group" id="s-triple">
+        <div class="slides-track flex h-full transition-transform duration-500" style="width:400%">
+          <img src="img/Hotel Banja Luka Argument triple room img 1.png" class="h-full object-cover shrink-0" style="min-width:25%" alt="Triple Room"/>
+          <img src="img/Hotel Banja Luka Argument triple room img 2.png" class="h-full object-cover shrink-0" style="min-width:25%" alt="Triple Room"/>
+          <img src="img/Hotel Banja Luka Argument triple room img 3.png" class="h-full object-cover shrink-0" style="min-width:25%" alt="Triple Room"/>
+          <img src="img/Hotel Banja Luka Argument triple room img 4.png" class="h-full object-cover shrink-0" style="min-width:25%" alt="Triple Room"/>
+        </div>
+        <button onclick="goSlide('s-triple',-1)" class="absolute left-2 top-1/2 -translate-y-1/2 bg-black/50 text-white w-9 h-9 flex items-center justify-center text-xl opacity-0 group-hover:opacity-100 transition-opacity hover:bg-[#D4AF37]">&#8249;</button>
+        <button onclick="goSlide('s-triple',1)" class="absolute right-2 top-1/2 -translate-y-1/2 bg-black/50 text-white w-9 h-9 flex items-center justify-center text-xl opacity-0 group-hover:opacity-100 transition-opacity hover:bg-[#D4AF37]">&#8250;</button>
+        <div class="absolute bottom-3 left-1/2 -translate-x-1/2 flex gap-2">
+          <span class="dot w-2 h-2 rounded-full bg-white cursor-pointer" onclick="setSlide('s-triple',0)"></span>
+          <span class="dot w-2 h-2 rounded-full bg-white/40 cursor-pointer" onclick="setSlide('s-triple',1)"></span>
+          <span class="dot w-2 h-2 rounded-full bg-white/40 cursor-pointer" onclick="setSlide('s-triple',2)"></span>
+          <span class="dot w-2 h-2 rounded-full bg-white/40 cursor-pointer" onclick="setSlide('s-triple',3)"></span>
+        </div>
+      </div>
+      <div class="flex items-center gap-4 mb-3 text-[#444748]">
+        <span class="material-symbols-outlined text-lg">wifi</span>
+        <span class="material-symbols-outlined text-lg">ac_unit</span>
+        <span class="material-symbols-outlined text-lg">tv</span>
+        <span class="material-symbols-outlined text-lg">shower</span>
+        <span class="material-symbols-outlined text-lg">bed</span>
+      </div>
+      <div class="flex justify-between items-start mb-3">
+        <h2 class="text-2xl font-semibold" style="font-family:'Playfair Display',serif;">Triple Room</h2>
+        <span class="text-xs font-semibold uppercase tracking-widest border border-gray-300 px-3 py-1 text-[#444748]">3 osobe</span>
+      </div>
+      <p class="text-[#444748] text-base leading-relaxed mb-6">Prostrana trokrevetna soba idealna za manje grupe ili porodice. Tri odvojena kreveta i sve što vam treba za udoban boravak.</p>
+      <div class="flex items-center justify-between mt-auto pt-6 border-t border-gray-200">
+        <span class="text-sm text-[#444748]">Od <strong class="text-black text-base">140 KM</strong> / noć</span>
+        <a href="kontakt.html" class="bg-black text-white text-xs font-semibold uppercase tracking-widest px-6 py-3 hover:bg-[#D4AF37] transition-colors duration-300">Rezervišite</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<script>
+  function goSlide(id, dir) {
+    const el = document.getElementById(id);
+    const imgs = el.querySelectorAll('img');
+    const dots = el.querySelectorAll('.dot');
+    let cur = parseInt(el.dataset.cur || 0);
+    cur = (cur + dir + imgs.length) % imgs.length;
+    el.dataset.cur = cur;
+    el.querySelector('.slides-track').style.transform = `translateX(-${cur * (100 / imgs.length)}%)`;
+    dots.forEach((d, i) => { d.classList.toggle('bg-white', i === cur); d.classList.toggle('bg-white/40', i !== cur); });
+  }
+  function setSlide(id, idx) {
+    const el = document.getElementById(id);
+    const imgs = el.querySelectorAll('img');
+    const dots = el.querySelectorAll('.dot');
+    el.dataset.cur = idx;
+    el.querySelector('.slides-track').style.transform = `translateX(-${idx * (100 / imgs.length)}%)`;
+    dots.forEach((d, i) => { d.classList.toggle('bg-white', i === idx); d.classList.toggle('bg-white/40', i !== idx); });
+  }
+</script>
+
+<footer class="bg-[#1A1A1A] text-white py-16">
+  <div class="max-w-[1280px] mx-auto px-16">
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
+      <div><span class="text-xl font-bold block mb-4" style="font-family:'Playfair Display',serif;">Hotel Argument</span><p class="text-sm text-gray-400 leading-relaxed">V kozarske brigade 25<br/>Banja Luka 78000<br/>Bosna i Hercegovina</p></div>
+      <div><h4 class="text-[#D4AF37] font-semibold mb-6">Adresa</h4><p class="text-sm text-gray-400 leading-relaxed">V kozarske brigade 25<br/>Banja Luka 78000<br/>Bosna i Hercegovina</p></div>
+      <div><h4 class="text-[#D4AF37] font-semibold mb-6">Kontakt</h4><p class="text-sm text-gray-400 mb-2">+38765 441-034</p><a class="text-sm text-gray-400 hover:text-[#D4AF37]" href="mailto:info@hotelargument.com">info@hotelargument.com</a></div>
+      <div><h4 class="text-[#D4AF37] font-semibold mb-6">Navigacija</h4><ul class="flex flex-col gap-3 text-sm text-gray-400"><li><a class="hover:text-[#D4AF37]" href="smjestaj.html">Smještaj</a></li><li><a class="hover:text-[#D4AF37]" href="restoran.html">Restoran</a></li><li><a class="hover:text-[#D4AF37]" href="konferencije.html">Konferencije</a></li><li><a class="hover:text-[#D4AF37]" href="galerija.html">Galerija</a></li><li><a class="hover:text-[#D4AF37]" href="kontakt.html">Kontakt</a></li></ul></div>
+    </div>
+    <div class="border-t border-gray-800 pt-8 flex justify-between items-center text-xs text-gray-500">
+      <div class="flex gap-4"><a class="hover:text-white" href="#">Politika privatnosti</a><span>|</span><a class="hover:text-white" href="#">Uslovi korištenja</a></div>
+      <p>© 2026 Hotel Argument. Sva prava zadržana.</p>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
