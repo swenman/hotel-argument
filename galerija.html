@@ -15,7 +15,7 @@
 <body class="antialiased">
 
 <nav class="bg-[#F9F9F7] top-0 sticky shadow-sm z-50">
-  <div class="flex justify-between items-center w-full px-16 max-w-[1280px] mx-auto h-20">
+  <div class="flex justify-between items-center w-full px-4 md:px-16 max-w-[1280px] mx-auto h-20">
     <a class="hover:opacity-80 transition-opacity" href="index.html">
       <img src="img/Hotel Banja Luka Argument LOGO.jpeg" alt="Hotel Argument" class="h-12 w-auto object-contain"/>
     </a>
@@ -28,15 +28,30 @@
       <li><a class="text-[#444748] hover:text-black text-xs font-semibold uppercase tracking-widest" href="kontakt.html">Kontakt</a></li>
     </ul>
     <a class="hidden md:inline-flex border border-black text-black text-xs font-semibold px-6 py-3 uppercase tracking-widest hover:bg-black hover:text-white transition-all" href="kontakt.html">Rezervišite</a>
+    <button class="md:hidden p-2" onclick="document.getElementById('mob-menu').classList.toggle('hidden')">
+      <span class="block w-6 h-0.5 bg-black mb-1.5"></span>
+      <span class="block w-6 h-0.5 bg-black mb-1.5"></span>
+      <span class="block w-6 h-0.5 bg-black"></span>
+    </button>
+  </div>
+  <div id="mob-menu" class="hidden md:hidden bg-[#F9F9F7] border-t border-gray-100 px-4 py-5 flex flex-col gap-5">
+    <a class="text-sm font-semibold uppercase tracking-widest text-[#444748]" href="index.html">Početna</a>
+    <a class="text-sm font-semibold uppercase tracking-widest text-[#444748]" href="smjestaj.html">Smještaj</a>
+    <a class="text-sm font-semibold uppercase tracking-widest text-[#444748]" href="restoran.html">Restoran</a>
+    <a class="text-sm font-semibold uppercase tracking-widest text-[#444748]" href="konferencije.html">Konferencije</a>
+    <a class="text-sm font-semibold uppercase tracking-widest text-black" href="galerija.html">Galerija</a>
+    <a class="text-sm font-semibold uppercase tracking-widest text-[#444748]" href="kontakt.html">Kontakt</a>
+    <a class="border border-black text-black text-xs font-semibold px-6 py-3 uppercase tracking-widest text-center" href="kontakt.html">Rezervišite</a>
+  </div>
   </div>
 </nav>
 
-<section class="px-16 py-16 max-w-[1280px] mx-auto border-b border-gray-200">
+<section class="px-4 md:px-16 py-8 md:py-16 max-w-[1280px] mx-auto border-b border-gray-200">
   <p class="text-xs font-semibold uppercase tracking-widest text-[#D4AF37] mb-4">Vizualni prikaz</p>
   <h1 class="text-5xl font-bold" style="font-family:'Playfair Display',serif;">Galerija</h1>
 </section>
 
-<section class="px-16 py-12 max-w-[1280px] mx-auto">
+<section class="px-4 md:px-16 py-6 md:py-12 max-w-[1280px] mx-auto">
   <div class="flex flex-wrap gap-3 mb-12">
     <button class="filter-btn active text-xs font-semibold uppercase tracking-widest border border-gray-300 px-5 py-2" onclick="filterGallery('sve', this)">Sve</button>
     <button class="filter-btn text-xs font-semibold uppercase tracking-widest border border-gray-300 px-5 py-2 text-[#444748]" onclick="filterGallery('sobe', this)">Sobe</button>
@@ -68,7 +83,7 @@
 </script>
 
 <footer class="bg-[#1A1A1A] text-white py-16 mt-8">
-  <div class="max-w-[1280px] mx-auto px-16">
+  <div class="max-w-[1280px] mx-auto px-4 md:px-16">
     <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
       <div><span class="text-xl font-bold block mb-4" style="font-family:'Playfair Display',serif;">Hotel Argument</span><p class="text-sm text-gray-400 leading-relaxed">V kozarske brigade 25<br/>Banja Luka 78000<br/>Bosna i Hercegovina</p></div>
       <div><h4 class="text-[#D4AF37] font-semibold mb-6">Adresa</h4><p class="text-sm text-gray-400 leading-relaxed">V kozarske brigade 25<br/>Banja Luka 78000<br/>Bosna i Hercegovina</p></div>

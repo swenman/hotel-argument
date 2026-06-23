@@ -12,7 +12,7 @@
 <body class="antialiased">
 
 <nav class="bg-[#F9F9F7] top-0 sticky shadow-sm z-50">
-  <div class="flex justify-between items-center w-full px-16 max-w-[1280px] mx-auto h-20">
+  <div class="flex justify-between items-center w-full px-4 md:px-16 max-w-[1280px] mx-auto h-20">
     <a class="hover:opacity-80 transition-opacity" href="index.html">
       <img src="img/Hotel Banja Luka Argument LOGO.jpeg" alt="Hotel Argument" class="h-12 w-auto object-contain"/>
     </a>
@@ -25,16 +25,30 @@
       <li><a class="text-[#444748] hover:text-black text-xs font-semibold uppercase tracking-widest" href="kontakt.html">Kontakt</a></li>
     </ul>
     <a class="hidden md:inline-flex border border-black text-black text-xs font-semibold px-6 py-3 uppercase tracking-widest hover:bg-black hover:text-white transition-all" href="kontakt.html">Rezervišite</a>
+    <button class="md:hidden p-2" onclick="document.getElementById('mob-menu').classList.toggle('hidden')">
+      <span class="block w-6 h-0.5 bg-black mb-1.5"></span>
+      <span class="block w-6 h-0.5 bg-black mb-1.5"></span>
+      <span class="block w-6 h-0.5 bg-black"></span>
+    </button>
+  </div>
+  <div id="mob-menu" class="hidden md:hidden bg-[#F9F9F7] border-t border-gray-100 px-4 py-5 flex flex-col gap-5">
+    <a class="text-sm font-semibold uppercase tracking-widest text-[#444748]" href="index.html">Početna</a>
+    <a class="text-sm font-semibold uppercase tracking-widest text-black" href="smjestaj.html">Smještaj</a>
+    <a class="text-sm font-semibold uppercase tracking-widest text-[#444748]" href="restoran.html">Restoran</a>
+    <a class="text-sm font-semibold uppercase tracking-widest text-[#444748]" href="konferencije.html">Konferencije</a>
+    <a class="text-sm font-semibold uppercase tracking-widest text-[#444748]" href="galerija.html">Galerija</a>
+    <a class="text-sm font-semibold uppercase tracking-widest text-[#444748]" href="kontakt.html">Kontakt</a>
+    <a class="border border-black text-black text-xs font-semibold px-6 py-3 uppercase tracking-widest text-center" href="kontakt.html">Rezervišite</a>
   </div>
 </nav>
 
-<section class="px-16 py-20 max-w-[1280px] mx-auto border-b border-gray-200">
+<section class="px-4 md:px-16 py-10 md:py-20 max-w-[1280px] mx-auto border-b border-gray-200">
   <p class="text-xs font-semibold uppercase tracking-widest text-[#D4AF37] mb-4">Smještaj</p>
-  <h1 class="text-5xl font-bold mb-6" style="font-family:'Playfair Display',serif;">Vaš prostor za odmor</h1>
-  <p class="text-lg text-[#444748] max-w-2xl leading-relaxed">Svaka soba u Hotelu Argument pažljivo je uređena kako bi vam pružila maksimalan komfor. Bez obzira dolazite li poslovno ili privatno, pronađite smještaj koji odgovara vašim potrebama.</p>
+  <h1 class="text-3xl md:text-5xl font-bold mb-6" style="font-family:'Playfair Display',serif;">Vaš prostor za odmor</h1>
+  <p class="text-base md:text-lg text-[#444748] max-w-2xl leading-relaxed">Svaka soba u Hotelu Argument pažljivo je uređena kako bi vam pružila maksimalan komfor. Bez obzira dolazite li poslovno ili privatno, pronađite smještaj koji odgovara vašim potrebama.</p>
 </section>
 
-<section class="px-16 py-20 max-w-[1280px] mx-auto">
+<section class="px-4 md:px-16 py-10 md:py-20 max-w-[1280px] mx-auto">
   <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
 
     <!-- Single Room -->
@@ -45,8 +59,8 @@
           <img src="img/Hotel Banja Luka Argument single WebP img 2.webp" class="h-full object-cover shrink-0" style="min-width:33.333%" alt="Single Room"/>
           <img src="img/Hotel Banja Luka Argument single WebP img 3.webp" class="h-full object-cover shrink-0" style="min-width:33.333%" alt="Single Room"/>
         </div>
-        <button onclick="goSlide('s-single',-1)" class="absolute left-2 top-1/2 -translate-y-1/2 bg-black/50 text-white w-9 h-9 flex items-center justify-center text-xl opacity-0 group-hover:opacity-100 transition-opacity hover:bg-[#D4AF37]">&#8249;</button>
-        <button onclick="goSlide('s-single',1)" class="absolute right-2 top-1/2 -translate-y-1/2 bg-black/50 text-white w-9 h-9 flex items-center justify-center text-xl opacity-0 group-hover:opacity-100 transition-opacity hover:bg-[#D4AF37]">&#8250;</button>
+        <button onclick="goSlide('s-single',-1)" class="absolute left-2 top-1/2 -translate-y-1/2 bg-black/50 text-white w-9 h-9 flex items-center justify-center text-xl opacity-60 md:opacity-0 md:group-hover:opacity-100 transition-opacity hover:bg-[#D4AF37]">&#8249;</button>
+        <button onclick="goSlide('s-single',1)" class="absolute right-2 top-1/2 -translate-y-1/2 bg-black/50 text-white w-9 h-9 flex items-center justify-center text-xl opacity-60 md:opacity-0 md:group-hover:opacity-100 transition-opacity hover:bg-[#D4AF37]">&#8250;</button>
         <div class="absolute bottom-3 left-1/2 -translate-x-1/2 flex gap-2">
           <span class="dot w-2 h-2 rounded-full bg-white cursor-pointer" onclick="setSlide('s-single',0)"></span>
           <span class="dot w-2 h-2 rounded-full bg-white/40 cursor-pointer" onclick="setSlide('s-single',1)"></span>
@@ -78,8 +92,8 @@
           <img src="img/Hotel Banja Luka Argument Dvokreventa WebP img 2.webp" class="h-full object-cover shrink-0" style="min-width:33.333%" alt="Double Room"/>
           <img src="img/Hotel Banja Luka Argument Dvokreventa WebP img 3.webp" class="h-full object-cover shrink-0" style="min-width:33.333%" alt="Double Room"/>
         </div>
-        <button onclick="goSlide('s-double',-1)" class="absolute left-2 top-1/2 -translate-y-1/2 bg-black/50 text-white w-9 h-9 flex items-center justify-center text-xl opacity-0 group-hover:opacity-100 transition-opacity hover:bg-[#D4AF37]">&#8249;</button>
-        <button onclick="goSlide('s-double',1)" class="absolute right-2 top-1/2 -translate-y-1/2 bg-black/50 text-white w-9 h-9 flex items-center justify-center text-xl opacity-0 group-hover:opacity-100 transition-opacity hover:bg-[#D4AF37]">&#8250;</button>
+        <button onclick="goSlide('s-double',-1)" class="absolute left-2 top-1/2 -translate-y-1/2 bg-black/50 text-white w-9 h-9 flex items-center justify-center text-xl opacity-60 md:opacity-0 md:group-hover:opacity-100 transition-opacity hover:bg-[#D4AF37]">&#8249;</button>
+        <button onclick="goSlide('s-double',1)" class="absolute right-2 top-1/2 -translate-y-1/2 bg-black/50 text-white w-9 h-9 flex items-center justify-center text-xl opacity-60 md:opacity-0 md:group-hover:opacity-100 transition-opacity hover:bg-[#D4AF37]">&#8250;</button>
         <div class="absolute bottom-3 left-1/2 -translate-x-1/2 flex gap-2">
           <span class="dot w-2 h-2 rounded-full bg-white cursor-pointer" onclick="setSlide('s-double',0)"></span>
           <span class="dot w-2 h-2 rounded-full bg-white/40 cursor-pointer" onclick="setSlide('s-double',1)"></span>
@@ -113,8 +127,8 @@
           <img src="img/Deluxe Double Room Hotel Banja Luka Argument img 3.png" class="h-full object-cover shrink-0" style="min-width:25%" alt="Deluxe Room"/>
           <img src="img/Deluxe Double Room Hotel Banja Luka Argument img 4.png" class="h-full object-cover shrink-0" style="min-width:25%" alt="Deluxe Room"/>
         </div>
-        <button onclick="goSlide('s-deluxe',-1)" class="absolute left-2 top-1/2 -translate-y-1/2 bg-black/50 text-white w-9 h-9 flex items-center justify-center text-xl opacity-0 group-hover:opacity-100 transition-opacity hover:bg-[#D4AF37]">&#8249;</button>
-        <button onclick="goSlide('s-deluxe',1)" class="absolute right-2 top-1/2 -translate-y-1/2 bg-black/50 text-white w-9 h-9 flex items-center justify-center text-xl opacity-0 group-hover:opacity-100 transition-opacity hover:bg-[#D4AF37]">&#8250;</button>
+        <button onclick="goSlide('s-deluxe',-1)" class="absolute left-2 top-1/2 -translate-y-1/2 bg-black/50 text-white w-9 h-9 flex items-center justify-center text-xl opacity-60 md:opacity-0 md:group-hover:opacity-100 transition-opacity hover:bg-[#D4AF37]">&#8249;</button>
+        <button onclick="goSlide('s-deluxe',1)" class="absolute right-2 top-1/2 -translate-y-1/2 bg-black/50 text-white w-9 h-9 flex items-center justify-center text-xl opacity-60 md:opacity-0 md:group-hover:opacity-100 transition-opacity hover:bg-[#D4AF37]">&#8250;</button>
         <div class="absolute bottom-3 left-1/2 -translate-x-1/2 flex gap-2">
           <span class="dot w-2 h-2 rounded-full bg-white cursor-pointer" onclick="setSlide('s-deluxe',0)"></span>
           <span class="dot w-2 h-2 rounded-full bg-white/40 cursor-pointer" onclick="setSlide('s-deluxe',1)"></span>
@@ -150,8 +164,8 @@
           <img src="img/Hotel Banja Luka Argument triple room img 3.png" class="h-full object-cover shrink-0" style="min-width:25%" alt="Triple Room"/>
           <img src="img/Hotel Banja Luka Argument triple room img 4.png" class="h-full object-cover shrink-0" style="min-width:25%" alt="Triple Room"/>
         </div>
-        <button onclick="goSlide('s-triple',-1)" class="absolute left-2 top-1/2 -translate-y-1/2 bg-black/50 text-white w-9 h-9 flex items-center justify-center text-xl opacity-0 group-hover:opacity-100 transition-opacity hover:bg-[#D4AF37]">&#8249;</button>
-        <button onclick="goSlide('s-triple',1)" class="absolute right-2 top-1/2 -translate-y-1/2 bg-black/50 text-white w-9 h-9 flex items-center justify-center text-xl opacity-0 group-hover:opacity-100 transition-opacity hover:bg-[#D4AF37]">&#8250;</button>
+        <button onclick="goSlide('s-triple',-1)" class="absolute left-2 top-1/2 -translate-y-1/2 bg-black/50 text-white w-9 h-9 flex items-center justify-center text-xl opacity-60 md:opacity-0 md:group-hover:opacity-100 transition-opacity hover:bg-[#D4AF37]">&#8249;</button>
+        <button onclick="goSlide('s-triple',1)" class="absolute right-2 top-1/2 -translate-y-1/2 bg-black/50 text-white w-9 h-9 flex items-center justify-center text-xl opacity-60 md:opacity-0 md:group-hover:opacity-100 transition-opacity hover:bg-[#D4AF37]">&#8250;</button>
         <div class="absolute bottom-3 left-1/2 -translate-x-1/2 flex gap-2">
           <span class="dot w-2 h-2 rounded-full bg-white cursor-pointer" onclick="setSlide('s-triple',0)"></span>
           <span class="dot w-2 h-2 rounded-full bg-white/40 cursor-pointer" onclick="setSlide('s-triple',1)"></span>
@@ -202,7 +216,7 @@
 </script>
 
 <footer class="bg-[#1A1A1A] text-white py-16">
-  <div class="max-w-[1280px] mx-auto px-16">
+  <div class="max-w-[1280px] mx-auto px-4 md:px-16">
     <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
       <div><span class="text-xl font-bold block mb-4" style="font-family:'Playfair Display',serif;">Hotel Argument</span><p class="text-sm text-gray-400 leading-relaxed">V kozarske brigade 25<br/>Banja Luka 78000<br/>Bosna i Hercegovina</p></div>
       <div><h4 class="text-[#D4AF37] font-semibold mb-6">Adresa</h4><p class="text-sm text-gray-400 leading-relaxed">V kozarske brigade 25<br/>Banja Luka 78000<br/>Bosna i Hercegovina</p></div>
