@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="bs">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>Hotel Argument | Banja Luka</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <style>
+    body { background-color: #F5F0E8; color: #1A1714; font-family: 'Inter', sans-serif; }
+    .serif { font-family: 'Cormorant Garamond', serif; }
+    .hero-bg { background-image: url('img/hero.jpg'); background-size: cover; background-position: center; }
+    .cat-btn {
+      background: rgba(245,240,232,0.15);
+      backdrop-filter: blur(8px);
+      border: 1px solid rgba(245,240,232,0.35);
+      transition: all 0.3s;
+    }
+    .cat-btn:hover { background: rgba(201,168,76,0.30); border-color: #C9A84C; }
+    .divider { width: 40px; height: 1px; background: #C9A84C; display: inline-block; }
+  </style>
+</head>
+<body class="antialiased">
+
+<!-- NAV -->
+<nav class="sticky top-0 w-full z-50 bg-[#F5F0E8] border-b border-[#C9A84C]/20">
+  <div class="flex justify-between items-center w-full px-6 md:px-16 max-w-[1280px] mx-auto h-20">
+    <a href="index2.html">
+      <img src="img/ARGUMENT LOGO FINAL_1.webp" alt="Hotel Argument" class="h-12 w-auto object-contain"/>
+    </a>
+    <ul class="hidden md:flex items-center gap-8">
+      <li><a class="text-[#1A1714]/60 hover:text-[#1A1714] text-xs font-medium uppercase tracking-widest transition-colors" href="#">Hotel</a></li>
+      <li><a class="text-[#1A1714]/60 hover:text-[#1A1714] text-xs font-medium uppercase tracking-widest transition-colors" href="#">Restoran</a></li>
+      <li><a class="text-[#1A1714]/60 hover:text-[#1A1714] text-xs font-medium uppercase tracking-widest transition-colors" href="#">Muzika</a></li>
+      <li><a class="text-[#1A1714]/60 hover:text-[#1A1714] text-xs font-medium uppercase tracking-widest transition-colors" href="galerija.html">Galerija</a></li>
+      <li><a class="text-[#1A1714]/60 hover:text-[#1A1714] text-xs font-medium uppercase tracking-widest transition-colors" href="kontakt.html">Kontakt</a></li>
+    </ul>
+    <a href="kontakt.html" class="hidden md:inline-flex border border-[#C9A84C] text-[#C9A84C] text-xs font-medium px-6 py-2.5 uppercase tracking-widest hover:bg-[#C9A84C] hover:text-[#F5F0E8] transition-all duration-300">Rezervišite</a>
+    <button class="md:hidden p-2" onclick="document.getElementById('mob-menu').classList.toggle('hidden')">
+      <span class="block w-6 h-0.5 bg-[#1A1714] mb-1.5"></span>
+      <span class="block w-6 h-0.5 bg-[#1A1714] mb-1.5"></span>
+      <span class="block w-6 h-0.5 bg-[#1A1714]"></span>
+    </button>
+  </div>
+  <div id="mob-menu" class="hidden md:hidden bg-[#F5F0E8] px-6 py-6 flex flex-col gap-5 border-t border-[#C9A84C]/20">
+    <a class="text-sm font-medium uppercase tracking-widest text-[#1A1714]/60" href="#">Hotel</a>
+    <a class="text-sm font-medium uppercase tracking-widest text-[#1A1714]/60" href="#">Restoran</a>
+    <a class="text-sm font-medium uppercase tracking-widest text-[#1A1714]/60" href="#">Muzika</a>
+    <a class="text-sm font-medium uppercase tracking-widest text-[#1A1714]/60" href="galerija.html">Galerija</a>
+    <a class="text-sm font-medium uppercase tracking-widest text-[#1A1714]/60" href="kontakt.html">Kontakt</a>
+    <a class="border border-[#C9A84C] text-[#C9A84C] text-xs font-medium px-6 py-3 uppercase tracking-widest text-center mt-2" href="kontakt.html">Rezervišite</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero-bg relative w-full min-h-[90vh] flex flex-col items-center justify-center text-center">
+  <div class="absolute inset-0 bg-[#1A1714]/50"></div>
+  <div class="relative z-10 flex flex-col items-center px-6">
+    <p class="text-xs font-medium uppercase tracking-[0.3em] text-[#C9A84C] mb-6">Banja Luka, Bosna i Hercegovina</p>
+    <h1 class="serif text-6xl md:text-8xl font-semibold text-[#F5F0E8] leading-none mb-4">Argument</h1>
+    <p class="text-[#F5F0E8]/50 text-sm uppercase tracking-[0.4em]">Hotel & Restoran</p>
+  </div>
+  <div class="absolute bottom-0 left-0 right-0 z-10 flex flex-col items-center gap-3 pb-0">
+    <div class="flex flex-col items-center gap-2 mb-6">
+      <span class="text-[#F5F0E8]/30 text-[10px] uppercase tracking-widest">Skrolujte</span>
+      <div class="w-0.5 h-8 bg-[#C9A84C]/40"></div>
+    </div>
+    <div class="flex gap-4 pb-8">
+      <a href="smjestaj.html" class="cat-btn text-[#F5F0E8] text-sm font-medium uppercase tracking-widest px-16 py-5">Hotel</a>
+      <a href="restoran.html" class="cat-btn text-[#F5F0E8] text-sm font-medium uppercase tracking-widest px-16 py-5">Restoran</a>
+    </div>
+  </div>
+</section>
+
+<!-- SEKCIJA: ARGUMENT HOTEL -->
+<section class="grid grid-cols-1 md:grid-cols-2 md:h-[75vh]">
+  <div class="overflow-hidden">
+    <img src="img/Hotel Argument Banja Luka 1.jpg" class="w-full h-full object-cover hover:scale-105 transition-transform duration-1000" alt="Argument Hotel"/>
+  </div>
+  <div class="bg-[#F5F0E8] flex items-center px-8 md:px-16 py-16 md:py-24 border-l border-[#C9A84C]/20">
+    <div>
+      <span class="divider mb-6 block"></span>
+      <p class="text-xs uppercase tracking-[0.3em] text-[#C9A84C] mb-4">Smještaj</p>
+      <h2 class="serif text-4xl md:text-5xl font-semibold text-[#1A1714] leading-tight mb-6">Argument<br/><em>Hotel</em></h2>
+      <p class="text-[#1A1714]/55 text-base leading-relaxed mb-8 max-w-sm">Udoban smještaj u mirnom dijelu Banja Luke, opremljen svim sadržajima za poslovne i privatne goste. Besplatan parking, WiFi i recepcija 24/7.</p>
+      <a href="smjestaj.html" class="inline-flex items-center gap-3 text-[#C9A84C] text-xs uppercase tracking-widest border-b border-[#C9A84C]/30 pb-1 hover:border-[#C9A84C] transition-colors">
+        Pogledajte sobe <span>→</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- SEKCIJA: ARGUMENT RESTORAN -->
+<section class="grid grid-cols-1 md:grid-cols-2 md:h-[75vh]">
+  <div class="bg-[#EDE7DC] flex items-center px-8 md:px-16 py-16 md:py-24 order-2 md:order-1 border-r border-[#C9A84C]/20">
+    <div>
+      <span class="divider mb-6 block"></span>
+      <p class="text-xs uppercase tracking-[0.3em] text-[#C9A84C] mb-4">Gastronomija</p>
+      <h2 class="serif text-4xl md:text-5xl font-semibold text-[#1A1714] leading-tight mb-6">Argument<br/><em>Restoran</em></h2>
+      <p class="text-[#1A1714]/55 text-base leading-relaxed mb-8 max-w-sm">Domaća i internacionalna kuhinja u prijatnoj atmosferi. Svježe namirnice, pažljivo odabrani specijaliteti i ljubazno osoblje — svaki dan za doručak, ručak i večeru.</p>
+      <a href="restoran.html" class="inline-flex items-center gap-3 text-[#C9A84C] text-xs uppercase tracking-widest border-b border-[#C9A84C]/30 pb-1 hover:border-[#C9A84C] transition-colors">
+        Pogledajte meni <span>→</span>
+      </a>
+    </div>
+  </div>
+  <div class="overflow-hidden order-1 md:order-2">
+    <img src="img/Hotel Argument Banja Luka img webp 1 restorant.webp" class="w-full h-full object-cover hover:scale-105 transition-transform duration-1000" alt="Argument Restoran"/>
+  </div>
+</section>
+
+<!-- SEKCIJA: MUZIKA UŽIVO -->
+<section class="grid grid-cols-1 md:grid-cols-2 md:h-[75vh]">
+  <div class="overflow-hidden">
+    <img src="img/Muzika uživo webp2 Hotel Argument copy.webp" class="w-full h-full object-cover hover:scale-105 transition-transform duration-1000" alt="Muzika uživo Hotel Argument"/>
+  </div>
+  <div class="bg-[#F5F0E8] flex items-center px-8 md:px-16 py-16 md:py-24 border-l border-[#C9A84C]/20">
+    <div>
+      <span class="divider mb-6 block"></span>
+      <p class="text-xs uppercase tracking-[0.3em] text-[#C9A84C] mb-4">Zabava</p>
+      <h2 class="serif text-4xl md:text-5xl font-semibold text-[#1A1714] leading-tight mb-6">Muzika<br/><em>Uživo</em></h2>
+      <p class="text-[#1A1714]/55 text-base leading-relaxed mb-8 max-w-sm">Posebne večeri uz live muziku u restoranu Argument. Pratite nas za raspored nastupa i rezervišite vaš sto na vrijeme.</p>
+      <a href="kontakt.html" class="inline-flex items-center gap-3 text-[#C9A84C] text-xs uppercase tracking-widest border-b border-[#C9A84C]/30 pb-1 hover:border-[#C9A84C] transition-colors">
+        Rezervišite sto <span>→</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- KONTAKT + MAPA -->
+<section class="bg-[#EDE7DC] border-t border-[#C9A84C]/15">
+  <div class="max-w-[1280px] mx-auto px-6 md:px-16 py-16 md:py-24">
+    <div class="mb-12">
+      <span class="divider mb-6 block"></span>
+      <p class="text-xs uppercase tracking-[0.3em] text-[#C9A84C] mb-4">Rezervacije & Kontakt</p>
+      <h2 class="serif text-4xl md:text-5xl font-semibold text-[#1A1714]">Rezervišite vaš boravak</h2>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-20">
+
+      <!-- LIJEVO: mapa -->
+      <div class="overflow-hidden border border-[#C9A84C]/20" style="aspect-ratio:4/3;">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d537.1669824000662!2d17.202638236295588!3d44.785349779595975!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475e03a87a8d552b%3A0x8047a9c3d12feb9f!2sV%20kozarske%20brigade%2025%2C%20Banja%20Luka%2078000!5e1!3m2!1sen!2sba!4v1782202902482!5m2!1sen!2sba"
+          width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+
+      <!-- DESNO: forma -->
+      <div>
+        <div id="kontakt-success" class="hidden bg-[#F5F0E8] border border-[#C9A84C]/30 text-[#1A1714] text-sm px-4 py-3 mb-6">
+          ✓ Vaš upit je primljen! Kontaktiraćemo vas u najkraćem mogućem roku.
+        </div>
+        <form id="kontakt-form" class="flex flex-col gap-7">
+          <input type="hidden" name="access_key" value="52fc7a6e-c7b5-4045-838e-2235ad578b80"/>
+          <input type="hidden" name="subject" value="Novi upit — Hotel Argument"/>
+          <input type="hidden" name="from_name" value="Hotel Argument Web"/>
+          <div>
+            <label class="block text-xs font-medium uppercase tracking-widest mb-3 text-[#1A1714]/50">Ime i prezime *</label>
+            <input type="text" name="ime_prezime" required placeholder="Vaše ime i prezime" class="w-full border-b border-[#1A1714]/20 bg-transparent pb-3 text-sm text-[#1A1714] placeholder-[#1A1714]/30 focus:outline-none focus:border-[#C9A84C] transition-colors"/>
+          </div>
+          <div>
+            <label class="block text-xs font-medium uppercase tracking-widest mb-3 text-[#1A1714]/50">Email adresa *</label>
+            <input type="email" name="email" required placeholder="vasa@email.com" class="w-full border-b border-[#1A1714]/20 bg-transparent pb-3 text-sm text-[#1A1714] placeholder-[#1A1714]/30 focus:outline-none focus:border-[#C9A84C] transition-colors"/>
+          </div>
+          <div>
+            <label class="block text-xs font-medium uppercase tracking-widest mb-3 text-[#1A1714]/50">Telefon</label>
+            <input type="tel" name="telefon" placeholder="+387 ..." class="w-full border-b border-[#1A1714]/20 bg-transparent pb-3 text-sm text-[#1A1714] placeholder-[#1A1714]/30 focus:outline-none focus:border-[#C9A84C] transition-colors"/>
+          </div>
+          <div>
+            <label class="block text-xs font-medium uppercase tracking-widest mb-3 text-[#1A1714]/50">Vrsta upita</label>
+            <select name="vrsta_upita" class="w-full border-b border-[#1A1714]/20 bg-transparent pb-3 text-sm text-[#1A1714]/70 focus:outline-none focus:border-[#C9A84C] transition-colors appearance-none">
+              <option>Rezervacija smještaja</option>
+              <option>Rezervacija restorana</option>
+              <option>Konferencijske sale</option>
+              <option>Grupni dolazak</option>
+              <option>Ostalo</option>
+            </select>
+          </div>
+          <div>
+            <label class="block text-xs font-medium uppercase tracking-widest mb-3 text-[#1A1714]/50">Poruka *</label>
+            <textarea name="poruka" rows="4" required placeholder="Datumi dolaska/odlaska, broj osoba..." class="w-full border-b border-[#1A1714]/20 bg-transparent pb-3 text-sm text-[#1A1714] placeholder-[#1A1714]/30 focus:outline-none focus:border-[#C9A84C] transition-colors resize-none"></textarea>
+          </div>
+          <button type="submit" class="bg-[#1A1714] text-[#F5F0E8] text-xs font-medium uppercase tracking-widest px-10 py-4 hover:bg-[#C9A84C] hover:text-[#1A1714] transition-colors duration-300 w-full mt-2">
+            Pošaljite upit
+          </button>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<script>
+  document.getElementById('kontakt-form').addEventListener('submit', async function(e) {
+    e.preventDefault();
+    const form = e.target;
+    const btn = form.querySelector('button[type=submit]');
+    btn.disabled = true;
+    btn.textContent = 'Slanje...';
+    const data = new FormData(form);
+    const res = await fetch('https://api.web3forms.com/submit', { method: 'POST', body: data, headers: { Accept: 'application/json' } });
+    const json = await res.json();
+    if (json.success) {
+      form.style.display = 'none';
+      document.getElementById('kontakt-success').classList.remove('hidden');
+    } else {
+      btn.disabled = false;
+      btn.textContent = 'Pošaljite upit';
+      alert('Greška pri slanju. Pokušajte ponovo ili nas pozovite.');
+    }
+  });
+</script>
+
+<!-- FOOTER -->
+<footer class="bg-[#1A1714] text-[#F5F0E8] py-8 border-t border-[#C9A84C]/15">
+  <div class="max-w-[1280px] mx-auto px-6 md:px-16">
+    <div class="flex flex-col md:flex-row md:items-center justify-between gap-6 mb-6">
+      <img src="img/ARGUMENT LOGO FINAL_1.webp" alt="Hotel Argument" class="h-9 w-auto object-contain"/>
+      <div class="flex flex-col sm:flex-row gap-4 sm:gap-10 text-sm text-[#F5F0E8]/60">
+        <span>V kozarske brigade 25, Banja Luka</span>
+        <a href="tel:+38765441034" class="hover:text-[#C9A84C] transition-colors">+38765 441-034</a>
+        <a href="mailto:info@hotelargument.com" class="hover:text-[#C9A84C] transition-colors">info@hotelargument.com</a>
+      </div>
+      <ul class="flex gap-6 text-sm text-[#F5F0E8]/60">
+        <li><a class="hover:text-[#C9A84C] transition-colors" href="smjestaj.html">Hotel</a></li>
+        <li><a class="hover:text-[#C9A84C] transition-colors" href="restoran.html">Restoran</a></li>
+        <li><a class="hover:text-[#C9A84C] transition-colors" href="galerija.html">Galerija</a></li>
+        <li><a class="hover:text-[#C9A84C] transition-colors" href="kontakt.html">Kontakt</a></li>
+      </ul>
+    </div>
+    <div class="border-t border-[#C9A84C]/10 pt-5 flex flex-col md:flex-row justify-between items-center gap-2 text-xs text-[#F5F0E8]/35">
+      <div class="flex gap-4">
+        <a class="hover:text-[#F5F0E8]/60" href="#">Politika privatnosti</a>
+        <span>|</span>
+        <a class="hover:text-[#F5F0E8]/60" href="#">Uslovi korištenja</a>
+      </div>
+      <p>© 2026 Hotel Argument. Sva prava zadržana.</p>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
