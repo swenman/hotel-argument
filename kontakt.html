@@ -139,6 +139,13 @@
 </section>
 
 <script>
+  const sobaParam = new URLSearchParams(window.location.search).get('soba');
+  if (sobaParam) {
+    const sel = document.querySelector('select[name="vrsta_upita"]');
+    const pogodak = [...sel.options].find(o => o.text === sobaParam);
+    if (pogodak) { sel.value = pogodak.value; } else { sel.add(new Option(sobaParam, sobaParam, true, true)); }
+  }
+
   document.getElementById('kontakt-form').addEventListener('submit', async function(e) {
     e.preventDefault();
     const form = e.target;
