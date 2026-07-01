@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="bs">
+<html lang="en">
 <head>
   <meta charset="utf-8"/>
   <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-  <title>Smještaj | Hotel Argument</title>
+  <title>Accommodation | Hotel Argument</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet"/>
@@ -13,23 +13,22 @@
 
 <nav class="bg-[#F9F9F7] top-0 sticky shadow-sm z-50">
   <div class="flex justify-between items-center w-full px-4 md:px-16 max-w-[1280px] mx-auto h-20">
-    <a class="hover:opacity-80 transition-opacity" href="index.html">
+    <a class="hover:opacity-80 transition-opacity" href="index-en.html">
       <img src="img/ARGUMENT LOGO FINAL_1.webp" alt="Hotel Argument" class="h-12 w-auto object-contain"/>
     </a>
     <ul class="hidden md:flex items-center gap-8">
-      <li><a class="text-[#444748] hover:text-black text-xs font-semibold uppercase tracking-widest" href="index.html">Početna</a></li>
-      <li><a class="text-black border-b-2 border-black pb-1 text-xs font-semibold uppercase tracking-widest" href="smjestaj.html">Smještaj</a></li>
-      <li><a class="text-[#444748] hover:text-black text-xs font-semibold uppercase tracking-widest" href="restoran.html">Restoran</a></li>
-      <li><a class="text-[#444748] hover:text-black text-xs font-semibold uppercase tracking-widest" href="konferencije.html">Konferencije</a></li>
-      <li><a class="text-[#444748] hover:text-black text-xs font-semibold uppercase tracking-widest" href="galerija.html">Galerija</a></li>
-      <li><a class="text-[#444748] hover:text-black text-xs font-semibold uppercase tracking-widest" href="kontakt.html">Kontakt</a></li>
+      <li><a class="text-[#444748] hover:text-black text-xs font-semibold uppercase tracking-widest" href="index-en.html">Home</a></li>
+      <li><a class="text-black border-b-2 border-black pb-1 text-xs font-semibold uppercase tracking-widest" href="smjestaj-en.html">Accommodation</a></li>
+      <li><a class="text-[#444748] hover:text-black text-xs font-semibold uppercase tracking-widest" href="restoran-en.html">Restaurant</a></li>
+      <li><a class="text-[#444748] hover:text-black text-xs font-semibold uppercase tracking-widest" href="galerija-en.html">Gallery</a></li>
+      <li><a class="text-[#444748] hover:text-black text-xs font-semibold uppercase tracking-widest" href="kontakt-en.html">Contact</a></li>
       <li class="border-l border-gray-300 pl-8 flex gap-2 text-xs font-semibold uppercase tracking-widest">
-        <span class="text-black">BHS</span>
+        <a href="smjestaj.html" class="text-[#444748] hover:text-black transition-colors">BHS</a>
         <span class="text-gray-300">|</span>
-        <a href="smjestaj-en.html" class="text-[#444748] hover:text-black transition-colors">EN</a>
+        <span class="text-black">EN</span>
       </li>
     </ul>
-    <a class="hidden md:inline-flex border border-black text-black text-xs font-semibold px-6 py-3 uppercase tracking-widest hover:bg-black hover:text-white transition-all" href="kontakt.html">Rezervišite</a>
+    <a class="hidden md:inline-flex border border-black text-black text-xs font-semibold px-6 py-3 uppercase tracking-widest hover:bg-black hover:text-white transition-all" href="kontakt-en.html">Book Now</a>
     <button class="md:hidden p-2" onclick="document.getElementById('mob-menu').classList.toggle('hidden')">
       <span class="block w-6 h-0.5 bg-black mb-1.5"></span>
       <span class="block w-6 h-0.5 bg-black mb-1.5"></span>
@@ -37,20 +36,24 @@
     </button>
   </div>
   <div id="mob-menu" class="hidden md:hidden bg-[#F9F9F7] border-t border-gray-100 px-4 py-5 flex flex-col gap-5">
-    <a class="text-sm font-semibold uppercase tracking-widest text-[#444748]" href="index.html">Početna</a>
-    <a class="text-sm font-semibold uppercase tracking-widest text-black" href="smjestaj.html">Smještaj</a>
-    <a class="text-sm font-semibold uppercase tracking-widest text-[#444748]" href="restoran.html">Restoran</a>
-    <a class="text-sm font-semibold uppercase tracking-widest text-[#444748]" href="konferencije.html">Konferencije</a>
-    <a class="text-sm font-semibold uppercase tracking-widest text-[#444748]" href="galerija.html">Galerija</a>
-    <a class="text-sm font-semibold uppercase tracking-widest text-[#444748]" href="kontakt.html">Kontakt</a>
-    <a class="border border-black text-black text-xs font-semibold px-6 py-3 uppercase tracking-widest text-center" href="kontakt.html">Rezervišite</a>
+    <a class="text-sm font-semibold uppercase tracking-widest text-[#444748]" href="index-en.html">Home</a>
+    <a class="text-sm font-semibold uppercase tracking-widest text-black" href="smjestaj-en.html">Accommodation</a>
+    <a class="text-sm font-semibold uppercase tracking-widest text-[#444748]" href="restoran-en.html">Restaurant</a>
+    <a class="text-sm font-semibold uppercase tracking-widest text-[#444748]" href="galerija-en.html">Gallery</a>
+    <a class="text-sm font-semibold uppercase tracking-widest text-[#444748]" href="kontakt-en.html">Contact</a>
+    <div class="flex gap-2 text-xs font-semibold uppercase tracking-widest">
+      <a href="smjestaj.html" class="text-[#444748]">BHS</a>
+      <span class="text-gray-300">|</span>
+      <span class="text-black">EN</span>
+    </div>
+    <a class="border border-black text-black text-xs font-semibold px-6 py-3 uppercase tracking-widest text-center" href="kontakt-en.html">Book Now</a>
   </div>
 </nav>
 
 <section class="px-4 md:px-16 py-10 md:py-20 max-w-[1280px] mx-auto border-b border-gray-200">
-  <p class="text-xs font-semibold uppercase tracking-widest text-[#D4AF37] mb-4">Smještaj</p>
-  <h1 class="text-3xl md:text-5xl font-bold mb-6" style="font-family:'Playfair Display',serif;">Vaš prostor za odmor</h1>
-  <p class="text-base md:text-lg text-[#444748] max-w-2xl leading-relaxed">Svaka soba u Hotelu Argument pažljivo je uređena kako bi vam pružila maksimalan komfor. Bez obzira dolazite li poslovno ili privatno, pronađite smještaj koji odgovara vašim potrebama.</p>
+  <p class="text-xs font-semibold uppercase tracking-widest text-[#D4AF37] mb-4">Accommodation</p>
+  <h1 class="text-3xl md:text-5xl font-bold mb-6" style="font-family:'Playfair Display',serif;">Your space to unwind</h1>
+  <p class="text-base md:text-lg text-[#444748] max-w-2xl leading-relaxed">Every room at Hotel Argument has been thoughtfully designed to offer you maximum comfort. Whether you're here for business or leisure, find the accommodation that suits your needs.</p>
 </section>
 
 <section class="px-4 md:px-16 py-10 md:py-20 max-w-[1280px] mx-auto">
@@ -80,12 +83,12 @@
       </div>
       <div class="flex justify-between items-start mb-3">
         <h2 class="text-2xl font-semibold" style="font-family:'Playfair Display',serif;">Single Room</h2>
-        <span class="text-xs font-semibold uppercase tracking-widest border border-gray-300 px-3 py-1 text-[#444748]">1 osoba</span>
+        <span class="text-xs font-semibold uppercase tracking-widest border border-gray-300 px-3 py-1 text-[#444748]">1 guest</span>
       </div>
-      <p class="text-[#444748] text-base leading-relaxed mb-6">Udobna jednokrevetna soba idealna za poslovne putnike. Opremljena svim potrebnim sadržajima za ugodan boravak.</p>
+      <p class="text-[#444748] text-base leading-relaxed mb-6">A comfortable single room, ideal for business travellers. Equipped with everything you need for a pleasant stay.</p>
       <div class="flex items-center justify-between mt-auto pt-6 border-t border-gray-200">
-        <span class="text-sm text-[#444748]">Od <strong class="text-black text-base">80 KM</strong> / noć</span>
-        <a href="kontakt.html?soba=Single+Room" class="bg-black text-white text-xs font-semibold uppercase tracking-widest px-6 py-3 hover:bg-[#D4AF37] transition-colors duration-300">Rezervišite</a>
+        <span class="text-sm text-[#444748]">From <strong class="text-black text-base">80 KM</strong> / night</span>
+        <a href="kontakt-en.html?soba=Single+Room" class="bg-black text-white text-xs font-semibold uppercase tracking-widest px-6 py-3 hover:bg-[#D4AF37] transition-colors duration-300">Book Now</a>
       </div>
     </div>
 
@@ -114,12 +117,12 @@
       </div>
       <div class="flex justify-between items-start mb-3">
         <h2 class="text-2xl font-semibold" style="font-family:'Playfair Display',serif;">Double or Twin Room</h2>
-        <span class="text-xs font-semibold uppercase tracking-widest border border-gray-300 px-3 py-1 text-[#444748]">2 osobe</span>
+        <span class="text-xs font-semibold uppercase tracking-widest border border-gray-300 px-3 py-1 text-[#444748]">2 guests</span>
       </div>
-      <p class="text-[#444748] text-base leading-relaxed mb-6">Prostrana soba s bračnim ili dva odvojena kreveta. Idealna za parove ili kolege na poslovnom putu.</p>
+      <p class="text-[#444748] text-base leading-relaxed mb-6">A spacious room with a double bed or two separate beds. Perfect for couples or colleagues on a business trip.</p>
       <div class="flex items-center justify-between mt-auto pt-6 border-t border-gray-200">
-        <span class="text-sm text-[#444748]">Od <strong class="text-black text-base">90 KM</strong> / noć</span>
-        <a href="kontakt.html?soba=Double+or+Twin+Room" class="bg-black text-white text-xs font-semibold uppercase tracking-widest px-6 py-3 hover:bg-[#D4AF37] transition-colors duration-300">Rezervišite</a>
+        <span class="text-sm text-[#444748]">From <strong class="text-black text-base">90 KM</strong> / night</span>
+        <a href="kontakt-en.html?soba=Double+or+Twin+Room" class="bg-black text-white text-xs font-semibold uppercase tracking-widest px-6 py-3 hover:bg-[#D4AF37] transition-colors duration-300">Book Now</a>
       </div>
     </div>
 
@@ -153,10 +156,10 @@
         <h2 class="text-2xl font-semibold" style="font-family:'Playfair Display',serif;">Deluxe Double Room</h2>
         <span class="text-xs font-semibold uppercase tracking-widest border border-gray-300 px-3 py-1 text-[#D4AF37]">Premium</span>
       </div>
-      <p class="text-[#444748] text-base leading-relaxed mb-6">Naša najprostranija soba s bračnim krevetom, pogledom na grad i premium sadržajima. Savršena za posebne prilike i duže boravke.</p>
+      <p class="text-[#444748] text-base leading-relaxed mb-6">Our most spacious room, featuring a double bed, city views and premium amenities. Perfect for special occasions and longer stays.</p>
       <div class="flex items-center justify-between mt-auto pt-6 border-t border-gray-200">
-        <span class="text-sm text-[#444748]">Od <strong class="text-black text-base">120 KM</strong> / noć</span>
-        <a href="kontakt.html?soba=Deluxe+Double+Room" class="bg-black text-white text-xs font-semibold uppercase tracking-widest px-6 py-3 hover:bg-[#D4AF37] transition-colors duration-300">Rezervišite</a>
+        <span class="text-sm text-[#444748]">From <strong class="text-black text-base">120 KM</strong> / night</span>
+        <a href="kontakt-en.html?soba=Deluxe+Double+Room" class="bg-black text-white text-xs font-semibold uppercase tracking-widest px-6 py-3 hover:bg-[#D4AF37] transition-colors duration-300">Book Now</a>
       </div>
     </div>
 
@@ -187,12 +190,12 @@
       </div>
       <div class="flex justify-between items-start mb-3">
         <h2 class="text-2xl font-semibold" style="font-family:'Playfair Display',serif;">Triple Room</h2>
-        <span class="text-xs font-semibold uppercase tracking-widest border border-gray-300 px-3 py-1 text-[#444748]">3 osobe</span>
+        <span class="text-xs font-semibold uppercase tracking-widest border border-gray-300 px-3 py-1 text-[#444748]">3 guests</span>
       </div>
-      <p class="text-[#444748] text-base leading-relaxed mb-6">Prostrana trokrevetna soba idealna za manje grupe ili porodice. Tri odvojena kreveta i sve što vam treba za udoban boravak.</p>
+      <p class="text-[#444748] text-base leading-relaxed mb-6">A spacious triple room ideal for small groups or families. Three separate beds and everything you need for a comfortable stay.</p>
       <div class="flex items-center justify-between mt-auto pt-6 border-t border-gray-200">
-        <span class="text-sm text-[#444748]">Od <strong class="text-black text-base">105 KM</strong> / noć</span>
-        <a href="kontakt.html?soba=Triple+Room" class="bg-black text-white text-xs font-semibold uppercase tracking-widest px-6 py-3 hover:bg-[#D4AF37] transition-colors duration-300">Rezervišite</a>
+        <span class="text-sm text-[#444748]">From <strong class="text-black text-base">105 KM</strong> / night</span>
+        <a href="kontakt-en.html?soba=Triple+Room" class="bg-black text-white text-xs font-semibold uppercase tracking-widest px-6 py-3 hover:bg-[#D4AF37] transition-colors duration-300">Book Now</a>
       </div>
     </div>
 
@@ -223,14 +226,14 @@
 <footer class="bg-[#1A1A1A] text-white py-8 md:py-16">
   <div class="max-w-[1280px] mx-auto px-4 md:px-16">
     <div class="grid grid-cols-1 md:grid-cols-4 gap-6 mb-8 md:gap-12 md:mb-16">
-      <div><span class="text-xl font-bold block mb-4" style="font-family:'Playfair Display',serif;">Hotel Argument</span><p class="text-sm text-gray-400 leading-relaxed">V kozarske brigade 25<br/>Banja Luka 78000<br/>Bosna i Hercegovina</p></div>
-      <div><h4 class="text-[#D4AF37] font-semibold mb-6">Adresa</h4><p class="text-sm text-gray-400 leading-relaxed">V kozarske brigade 25<br/>Banja Luka 78000<br/>Bosna i Hercegovina</p></div>
-      <div><h4 class="text-[#D4AF37] font-semibold mb-6">Kontakt</h4><p class="text-sm text-gray-400 mb-2">+38765 441-034</p><a class="text-sm text-gray-400 hover:text-[#D4AF37]" href="mailto:info@hotelargument.com">info@hotelargument.com</a></div>
-      <div><h4 class="text-[#D4AF37] font-semibold mb-6">Navigacija</h4><ul class="flex flex-col gap-3 text-sm text-gray-400"><li><a class="hover:text-[#D4AF37]" href="smjestaj.html">Smještaj</a></li><li><a class="hover:text-[#D4AF37]" href="restoran.html">Restoran</a></li><li><a class="hover:text-[#D4AF37]" href="konferencije.html">Konferencije</a></li><li><a class="hover:text-[#D4AF37]" href="galerija.html">Galerija</a></li><li><a class="hover:text-[#D4AF37]" href="kontakt.html">Kontakt</a></li></ul></div>
+      <div><span class="text-xl font-bold block mb-4" style="font-family:'Playfair Display',serif;">Hotel Argument</span><p class="text-sm text-gray-400 leading-relaxed">V kozarske brigade 25<br/>Banja Luka 78000<br/>Bosnia and Herzegovina</p></div>
+      <div><h4 class="text-[#D4AF37] font-semibold mb-6">Address</h4><p class="text-sm text-gray-400 leading-relaxed">V kozarske brigade 25<br/>Banja Luka 78000<br/>Bosnia and Herzegovina</p></div>
+      <div><h4 class="text-[#D4AF37] font-semibold mb-6">Contact</h4><p class="text-sm text-gray-400 mb-2">+38765 441-034</p><a class="text-sm text-gray-400 hover:text-[#D4AF37]" href="mailto:info@hotelargument.com">info@hotelargument.com</a></div>
+      <div><h4 class="text-[#D4AF37] font-semibold mb-6">Navigation</h4><ul class="flex flex-col gap-3 text-sm text-gray-400"><li><a class="hover:text-[#D4AF37]" href="smjestaj-en.html">Accommodation</a></li><li><a class="hover:text-[#D4AF37]" href="restoran-en.html">Restaurant</a></li><li><a class="hover:text-[#D4AF37]" href="galerija-en.html">Gallery</a></li><li><a class="hover:text-[#D4AF37]" href="kontakt-en.html">Contact</a></li></ul></div>
     </div>
     <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-3 text-xs text-gray-500">
-      <div class="flex gap-4"><a class="hover:text-white" href="#">Politika privatnosti</a><span>|</span><a class="hover:text-white" href="#">Uslovi korištenja</a></div>
-      <p>© 2026 Hotel Argument. Sva prava zadržana.</p>
+      <div class="flex gap-4"><a class="hover:text-white" href="#">Privacy Policy</a><span>|</span><a class="hover:text-white" href="#">Terms of Use</a></div>
+      <p>© 2026 Hotel Argument. All rights reserved.</p>
     </div>
   </div>
 </footer>
